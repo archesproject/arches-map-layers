@@ -24,7 +24,7 @@ A 3d rendering of buildings data. Also made in MapBox studio.
 
 ### Adding Tileserver Layers
 
-###### vector tiles from PostGIS table
+##### vector tiles from PostGIS table
 
 First load the `rivers.sql` file into your PostGIS database.
 
@@ -34,13 +34,13 @@ Creates a new table called `rivers` in the `arches` database and loads it with t
 
 `python manage.py packages -o add_tileserver_layer -t "arches4-geo-examples/tileserver/postgis/rivers.json" -n "rivers"`
 
-###### from shapefile
+##### from shapefile
 
 This is an example of using the mapnik rendering engine in a tileserver layer. Note the `-m` argument used to point to a mapnik .xml file.
 
 `python manage.py packages -o add_tileserver_layer -m "arches4-geo-examples/tileserver/shapefile/world.json" -n "world"`
 
-###### from geotiff
+##### from geotiff
 
 Another mapnik example, in this case serving a geotiff (in EPSG:3857).
 
