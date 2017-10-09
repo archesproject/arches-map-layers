@@ -22,6 +22,12 @@ A 3d rendering of buildings data. Also made in MapBox studio.
 
 `python manage.py packages -o add_mapbox_layer -j "arches4-geo-examples/mapbox_layers/3d_Buildings/3d-buildings-mapbox.json" -n "3d Buildings"`
 
+##### ArcGIS server layer / XYZ tileset
+
+Loading an XYZ tileset from an ArcGIS Online service
+
+`python manage.py packages -o add_mapbox_layer -j "arches4-geo-examples/mapbox_layers/ArcGIS_service/arcgis-topo.json" -n "ArcGIS Topo"`
+
 ### Adding Tileserver Layers
 
 ##### vector tiles from PostGIS table
