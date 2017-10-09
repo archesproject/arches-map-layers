@@ -38,10 +38,10 @@ Creates a new table called `rivers` in the `arches` database and loads it with t
 
 This is an example of using the mapnik rendering engine in a tileserver layer. Note the `-m` argument used to point to a mapnik .xml file.
 
-`python manage.py packages -o add_tileserver_layer -m "arches4-geo-examples/tileserver/shapefile/world.json" -n "world"`
+`python manage.py packages -o add_tileserver_layer -m "arches4-geo-examples/tileserver/shapefile/world.xml" -n "world"`
 
 ##### from geotiff
 
 Another mapnik example, in this case serving a geotiff (in EPSG:3857).
 
-`python manage.py packages -o add_tileserver_layer -m "arches4-geo-examples/tileserver/geotiff/hillshade.json" -n "hillshade"`
+`python manage.py packages -o add_tileserver_layer -m "arches4-geo-examples/tileserver/geotiff/hillshade.xml" -n "hillshade"`
