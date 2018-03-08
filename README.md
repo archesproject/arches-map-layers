@@ -51,3 +51,15 @@ This is an example of using the mapnik rendering engine in a tileserver layer. N
 Another mapnik example, in this case serving a geotiff (in EPSG:3857).
 
 `python manage.py packages -o add_tileserver_layer -m "arches4-geo-examples/tileserver/geotiff/hillshade.xml" -n "hillshade"`
+
+##### using the tileserver to cascade a WMS
+
+You can also create a new tileserver layer to add an external Web Map Service to your Arches map. This repo contains two examples
+
+1. From ArcGIS Server (precipitation layer from US NOAA)
+
+`python manage.py packages -o add_tileserver_layer -t "arches4-geo-examples/tileserver/wms/wms-noaa.json" -n "NOAA Precipitation"`
+
+2. From GeoServer (a historic map mosaic in Northwestern Louisiana, USA)
+
+`python manage.py packages -o add_tileserver_layer -t "arches4-geo-examples/tileserver/wms/wms-geoserver.json" -n "Confederate Maps"`
