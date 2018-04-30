@@ -40,7 +40,7 @@ Loading an XYZ tileset from an ArcGIS Online service
 
 First load the `rivers.sql` file into your PostGIS database.
 
-`psql -U postgres -h localhost -d <your db name> -f arches4-geo-examples/tileserver/postgis/rivers.sql`
+`psql -U postgres -h localhost -d <your Arches db name> -f arches4-geo-examples/tileserver/postgis/rivers.sql`
 
 Creates a new table called `rivers` in the `arches` database and loads it with the included file. Then use
 
