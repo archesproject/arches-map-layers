@@ -74,7 +74,7 @@ You can also create a new tileserver layer to add an external Web Map Service to
 
     [wms-noaa.json](https://github.com/legiongis/arches4-geo-examples/blob/master/tileserver/wms/wms-noaa.json)
 
-2. From GeoServer (a historic map mosaic in Northwestern Louisiana, USA)
+2. From GeoServer (a historic map mosaic centered around Natchitoches, Louisiana, USA (31.751892, -93.085166))
 
     `python manage.py packages -o add_tileserver_layer -t "arches4-geo-examples/tileserver/wms/wms-geoserver.json" -n "Confederate Maps"`
 
