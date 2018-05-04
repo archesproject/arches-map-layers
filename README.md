@@ -73,6 +73,8 @@ You can also create a new tileserver layer to add an external Web Map Service to
     `python manage.py packages -o add_tileserver_layer -t "arches4-geo-examples/tileserver/wms/wms-noaa.json" -n "NOAA Precipitation"`
 
     [wms-noaa.json](https://github.com/legiongis/arches4-geo-examples/blob/master/tileserver/wms/wms-noaa.json)
+    
+    Note that in the url for this example, the `layers` parameter has a value of `5`. You'll need to update this to the correct layer number in your ArcGIS server. Often this is `0`.
 
 2. From GeoServer (a historic map mosaic centered around Natchitoches, Louisiana, USA (31.751892, -93.085166))
 
@@ -80,4 +82,4 @@ You can also create a new tileserver layer to add an external Web Map Service to
 
     [wms-geoserver.json](https://github.com/legiongis/arches4-geo-examples/blob/master/tileserver/wms/wms-geoserver.json)
 
-    Note that the only difference in the URL parameter values between ArcGIS Server and GeoServer is that in GeoServer layer names must be prepended with their workspace: `crnha:confedmaps_full` is the `confedmaps_full` layer in the `crnha` workspace.
+    Note that when retrieving a WMS from GeoServer, the `layer` parameter must contain the layer name prepended with the workspace: `crnha:confedmaps_full` is the `confedmaps_full` layer in the `crnha` workspace.
