@@ -1,0 +1,14 @@
+{
+    "sources": {
+        "stamen-watercolor": {
+            "tiles": ["http://a.tile.stamen.com/watercolor/{z}/{x}/{y}.png"],
+            "type": "raster",
+            "tileSize": 256
+        }
+    },
+    "layers": [{
+        "id": "stamen-watercolor",
+        "type": "raster",
+        "source": "stamen-watercolor"
+    }]
+}
