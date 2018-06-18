@@ -48,7 +48,7 @@ Download this spec to a .json file, and load it with `add_mapbox_layer`, or you 
 
 `python manage.py packages -o add_mapbox_layer -j "arches4-geo-examples/mapbox_layers/MapTiler/maptiler-topo-vectortiles.json" -n "Topo"`
 
-[maptiler-topo-vectortiles.json](https://github.com/legiongis/arches4-geo-examples/mapbox_layers/MapTiler/maptiler-topo-vectortiles.json)
+[maptiler-topo-vectortiles.json](https://github.com/legiongis/arches4-geo-examples/blob/master/mapbox_layers/MapTiler/maptiler-topo-vectortiles.json)
 
 Finally, in Arches System Settings (in the app UI) update the Map Settings > Mapbox Glyphs setting with the "glyphs" url that can be found in the .json spec that you downloaded.
 
