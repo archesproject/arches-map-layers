@@ -53,3 +53,27 @@ Finally, in Arches System Settings (in the app UI) update the Map Settings > Map
 ##### ArcGIS Server Vector Tiles
 
 *We are currently looking for an example of a vector tile service on an ArcGIS server which a) uses open data and b) published tile in the correct spatial reference (EPSG:3857).*
+
+### Configuring a Web Map Service
+
+A Web Map Service (WMS) can be configured as a layer source in Arches. The configuration is composed of a Map Source
+and a Map Layer and can be configured in the Django admin pages found at `http://<Arches host>:<Arches port>/admin`.
+A Map Source / Map Layer can also be loaded in to the system by way of a Django Fixture which needs to be run explicitly
+or a Django Migration which is run automatically.
+
+##### Django Fixtures
+Map Sources and Layers are loaded as a Django Fixture by creating a file in either JSON or YAML format in the
+`<Arches Project Directory>/fixtures` directory and loaded by running
+
+`# python manage.py loaddata <fixture name>` eg
+
+`# python manage.py loaddata bc-regional-district-boundaries-vector`
+
+See [bc-regional-district-boundaries-vector.json](https://github.com/archesproject/arches-map-layers/blob/master/wms/fixtures/bc-regional-district-boundaries.json)
+
+where the fixture name is the filename of the fixture without the file extension. Django Fixtures are loaded manually.
+If the data should be automatically loaded it can be done as a Django Extension
+
+##### Django Migration
+
+To be added.
