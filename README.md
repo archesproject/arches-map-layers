@@ -69,7 +69,7 @@ Map Sources and Layers are loaded as a Django Fixture by creating a file in eith
 
 `# python manage.py loaddata bc-regional-district-boundaries-vector`
 
-See [bc-regional-district-boundaries-vector.json](https://github.com/archesproject/arches-map-layers/blob/master/wms/fixtures/bc-regional-district-boundaries.json)
+See [bc-regional-district-boundaries-vector.json](https://github.com/archesproject/arches-map-layers/blob/master/wms/fixtures/bc-regional-district-boundaries-vector.json)
 
 where the fixture name is the filename of the fixture without the file extension. Django Fixtures are loaded manually.
 If the data should be automatically loaded it can be done as a Django Extension
