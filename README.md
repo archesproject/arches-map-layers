@@ -54,9 +54,9 @@ Finally, in Arches System Settings (in the app UI) update the Map Settings > Map
 
 *We are currently looking for an example of a vector tile service on an ArcGIS server which a) uses open data and b) published tile in the correct spatial reference (EPSG:3857).*
 
-### Configuring a Web Mapping Service
+### Configuring a Web Map Service
 
-A Web Mapping Service (WMS) can be configured as a layer source in Arches. The configuration is composed of a Map Source
+A Web Map Service (WMS) can be configured as a layer source in Arches. The configuration is composed of a Map Source
 and a Map Layer and can be configured in the Django admin pages found at `http://<Arches host>:<Arches port>/admin`.
 A Map Source / Map Layer can also be loaded in to the system by way of a Django Fixture which needs to be run explicitly
 or a Django Migration which is run automatically.
